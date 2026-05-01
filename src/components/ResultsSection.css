@@ -1,0 +1,104 @@
+.results-section {
+  padding: 32px;
+  background: white;
+}
+
+.results-section h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #1e3c72;
+  font-weight: 600;
+}
+
+.result-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: white;
+}
+
+.result-card.highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.result-label {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.result-value {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.result-item {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.result-icon {
+  font-size: 28px;
+}
+
+.result-details {
+  flex: 1;
+}
+
+.result-title {
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.result-amount {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e3c72;
+}
+
+.info-note {
+  background: #fff3cd;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  border-left: 4px solid #ffc107;
+}
+
+.info-icon {
+  font-size: 20px;
+}
+
+.info-text {
+  font-size: 12px;
+  color: #856404;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .result-value {
+    font-size: 28px;
+  }
+}

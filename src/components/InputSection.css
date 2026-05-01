@@ -1,0 +1,11 @@
+.input-section {
+  padding: 32px;
+  background: #f8f9fa;
+}
+
+.input-section h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #1e3c72;
+  font-weight: 600;
+}

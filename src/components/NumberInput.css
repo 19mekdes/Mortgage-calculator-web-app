@@ -1,0 +1,48 @@
+.number-input-wrapper {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.input-prefix {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.input-suffix {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  font-size: 12px;
+}
+
+.number-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.number-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Style for number input with prefix */
+.number-input-wrapper:has(.input-prefix) .number-input {
+  padding-left: 28px;
+}
+
+/* Style for number input with suffix */
+.number-input-wrapper:has(.input-suffix) .number-input {
+  padding-right: 60px;
+}
