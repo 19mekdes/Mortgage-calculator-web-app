@@ -19,13 +19,11 @@ const MortgageCalculator = () => {
     totalPayment: 0,
     downPaymentPercent: 0
   })
-
-  useEffect(() => {
+ useEffect(() => {
     const loanAmountValue = purchasePrice - downPayment
     const downPaymentPercentValue = (downPayment / purchasePrice) * 100
     
     const calculation = calculateMortgage(loanAmountValue, loanTerm, interestRate)
-    
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setResults({
       monthlyPayment: calculation.monthlyPayment,
