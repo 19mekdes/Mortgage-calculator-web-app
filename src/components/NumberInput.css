@@ -37,12 +37,11 @@
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-/* Style for number input with prefix */
 .number-input-wrapper:has(.input-prefix) .number-input {
   padding-left: 28px;
 }
 
-/* Style for number input with suffix */
+
 .number-input-wrapper:has(.input-suffix) .number-input {
   padding-right: 60px;
 }
