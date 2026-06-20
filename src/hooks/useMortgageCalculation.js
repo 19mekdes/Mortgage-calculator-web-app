@@ -25,7 +25,7 @@ const useMortgageCalculation = (purchasePrice, downPayment, loanTerm, interestRa
     let monthlyPayment = 0
     
     if (monthlyRate === 0) {
-      // If interest rate is 0, simple division
+      
       monthlyPayment = principal / numberOfPayments
     } else {
       // Mortgage formula: M = P[r(1+r)^n/((1+r)^n)-1)]
